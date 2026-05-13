@@ -414,7 +414,7 @@ if (contactForm) {
       from_email  : email,
       service     : service || "Not specified",
       message     : details || "No details provided",
-      to_email    : "zerospeak666@gmail.com",
+      to_email    : "inzustudio@gmail.com",
     };
 
     try {
@@ -428,7 +428,7 @@ if (contactForm) {
         // Fallback: open mailto if EmailJS not set up yet
         const subject = encodeURIComponent(`New Project Enquiry from ${name} — ${service}`);
         const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nService: ${service}\n\nDetails:\n${details}`);
-        window.open(`mailto:zerospeak666@gmail.com?subject=${subject}&body=${body}`);
+        window.open(`mailto:inzustudio@gmail.com?subject=${subject}&body=${body}`);
         btn.textContent   = "Sent! ✦";
         btn.style.opacity = "1";
         if (status) { status.textContent = "✦ Opening your email app…"; status.style.display = "block"; }
